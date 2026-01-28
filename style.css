@@ -37,6 +37,11 @@ img {
     width: 220px;
     margin-top: 20px;
     filter: drop-shadow(0 0 10px #000);
+    transition: 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1, 1.1);
 }
 
 button {
@@ -49,7 +54,7 @@ button {
     border: 3px solid white;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
@@ -73,7 +78,7 @@ div img {
     height: 235px;
 }
 
-section.menu {
+.menu {
     display: block;
     margin-top: 2vw;
     margin-left: 32vw;
@@ -84,6 +89,12 @@ section.menu {
     padding-bottom: 45px;
     border-color: brown;
     background: rgb(105, 105, 105);
+    transition: 0.3s ease-in-out;
+}
+
+.menu:hover {
+    border-color: rgb(56, 8, 18);
+    transform: scale(1.1, 1.1);
 }
 
 .legendsPlayers {
@@ -91,11 +102,14 @@ section.menu {
     border-color: rgb(114, 17, 37);
     border-style: solid;
     border-radius: 15px;
+    transition: 0.3s ease-in;
 }
 
 .legendsPlayers:hover {
     border-color: rgb(56, 8, 18);
-    transform: translateY(-5px);
+    transform: scale(1.1, 1.1);
+    cursor: zoom-in;
+
 }
 
 .goalKeepers {
